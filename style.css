@@ -32,7 +32,6 @@ nav a {
 nav a:hover {
     color: #ffcc00;
 }
-/* Add these styles at the end of the existing CSS */
 
 .main-content {
     padding: 20px;
@@ -47,29 +46,8 @@ nav a:hover {
 }
 
 .image-container {
-    flex: 1;
-}
-
-.image-container img {
-    max-width: 100%;
-    height: auto;
-}
-
-.body-content {
-    flex: 2;
-    padding: 0 20px;
-}
-
-@media (max-width: 768px) {
-    .image-body-section,
-    .body-image-section {
-        flex-direction: column;
-    }
-}
-/* Add styles for the black square container */
-
-.image-container {
     position: relative;
+    flex: 1;
 }
 
 .image-container img {
@@ -91,4 +69,16 @@ nav a:hover {
     transform: translate(-50%, -50%);
     text-align: center;
     width: 100%;
+}
+
+.body-content {
+    flex: 2;
+    padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+    .image-body-section,
+    .body-image-section {
+        flex-direction: column;
+    }
 }
