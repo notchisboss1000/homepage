@@ -1,10 +1,12 @@
 // index.js
 
-// Wait for the DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function () {
-    // Select the h1 element by its id
-    var headerElement = document.getElementById('dynamicHeader');
+    // Select the button element by its id
+    var buttonElement = document.getElementById('clickMeButton');
 
-    // Modify the content of the h1 element
-    headerElement.innerHTML = 'New Header Text!';
+    // Attach a click event listener to the button
+    buttonElement.addEventListener('click', function () {
+        // Trigger a popup (you can replace this with your desired popup logic)
+        alert('Button Clicked!');
+    });
 });
