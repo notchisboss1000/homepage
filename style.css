@@ -5,7 +5,7 @@ body {
 
 .top-bar {
     background-color: #333;
-    color: #fff;
+    color: #006bff;
     padding: 10px 0;
 }
 
@@ -23,14 +23,14 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #fff;
+    color: #001aff;
     font-weight: bold;
     font-size: 16px;
     transition: color 0.3s ease-in-out;
 }
 
 nav a:hover {
-    color: #ffcc00;
+    color: #ffffff;
 }
 
 .main-content {
