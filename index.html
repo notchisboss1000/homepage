@@ -20,10 +20,12 @@
     </nav>
 </div>
 
+<!-- Update the image tags with onerror attribute -->
+
 <div class="main-content">
     <section class="image-body-section">
         <div class="image-container">
-            <img src="your_image_url1.jpg" alt="Image 1">
+            <img src="your_image_url1.jpg" alt="Image 1" onerror="handleImageError(this)">
         </div>
         <div class="body-content">
             <h2>Section 1 Title</h2>
@@ -37,10 +39,11 @@
             <p>This is the body content for the second section.</p>
         </div>
         <div class="image-container">
-            <img src="your_image_url2.jpg" alt="Image 2">
+            <img src="your_image_url2.jpg" alt="Image 2" onerror="handleImageError(this)">
         </div>
     </section>
 </div>
+
 
 <script src="script.js"></script>
 </body>
