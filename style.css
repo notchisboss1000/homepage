@@ -66,4 +66,29 @@ nav a:hover {
         flex-direction: column;
     }
 }
+/* Add styles for the black square container */
 
+.image-container {
+    position: relative;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-container.error {
+    background-color: #000;
+}
+
+.image-container.error::after {
+    content: 'Image not found';
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}
