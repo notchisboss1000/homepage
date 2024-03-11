@@ -1,86 +1,36 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #40536e;
-    color: #ffffff;
-}
-
-.top-bar {
-    background-color: #333;
-    color: #006bff;
-    padding: 10px 0;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
     padding: 0;
+    overflow: hidden;
+    background-color: black;
+    color: limegreen;
+    font-family: 'Courier New', monospace;
+}
+
+.container {
     display: flex;
-    justify-content: center;
-}
-
-nav li {
-    margin: 0 15px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #001aff;
-    font-weight: bold;
-    font-size: 16px;
-    transition: color 0.3s ease-in-out;
-}
-
-nav a:hover {
-    color: #ffffff;
-}
-
-.main-content {
-    padding: 20px;
-}
-
-.image-body-section,
-.body-image-section {
-    display: flex;
-    flex-direction: row;
     align-items: center;
-    margin-bottom: 30px;
+    justify-content: center;
+    height: 100vh;
 }
 
-.image-container {
-    position: relative;
-    flex: 1;
-}
-
-.image-container img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-.image-container.error {
-    background-color: #000;
-}
-
-.image-container.error::after {
-    content: 'Image not found';
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+#text-container {
     text-align: center;
-    width: 100%;
 }
 
-.body-content {
-    flex: 2;
-    padding: 0 20px;
+#typing-text {
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid limegreen;
+    animation: typing 2s steps(40) infinite;
 }
 
-@media (max-width: 768px) {
-    .image-body-section,
-    .body-image-section {
-        flex-direction: column;
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
     }
 }
