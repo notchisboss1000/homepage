@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.typewriter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: limegreen;
+    font-family: 'Courier New', monospace;
+    white-space: pre-wrap;
+    font-size: 18px;
+}
