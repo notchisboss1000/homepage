@@ -48,6 +48,7 @@ nav a:hover {
 
 #typing-text {
     font-size: 24px;
+    font-weight: bold;
     white-space: nowrap;
     overflow: hidden;
     border-right: 2px solid limegreen;
@@ -62,6 +63,7 @@ nav a:hover {
         width: 100%;
     }
 }
+
 
 .main-content {
     padding: 20px;
